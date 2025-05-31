@@ -2,8 +2,28 @@
     --clr-blu: #5f8fa5;
     --clr-sec: #f3d89f;
     --clr-last: #979797;
+    --clr-white: #FFFFFF;
+}
+section img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.absolute {
+    position: absolute;
+    top: 3.5%;
+    left: 0;
+    letter-spacing: 0.3em;
+    font-size: 1.5rem;
+    font-family: georgia;
+}
+#parents-text {
+    color: var(--clr-blu);
+    font-family: merriweather;
+    font-style: italic;
 }
 body {
+    position: relative;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -34,27 +54,28 @@ header nav ul {
     justify-content: space-around;
     list-style: none;
     padding: 20px;
-    background: #333;
-    color: white;
+    background: var(--clr-last);
+    color: var(--clr-white);
 }
 
 nav a {
-    color: white;
+    color: var(--clr-white);
     text-decoration: none;
 }
 
 
 #hero {
-    text-align: center;
-    padding: 50px;
-    background: #f4a261;
+    display: flex;
+    padding: 40px;
+    background: var(--clr-white);
 }
 
 .hero-buttons {
     display: flex;
-    justify-content: center;
     gap: 15px;
-    margin-top: 20px;
+}
+div button {
+    border-radius: 5px; 
 }
 
 
@@ -68,7 +89,7 @@ nav a {
 .sitter {
     text-align: center;
     padding: 10px;
-    background: #fff;
+    background: var(--clr-white);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -88,7 +109,7 @@ nav a {
 
 .service, .safety-feature {
     padding: 20px;
-    background: #fff;
+    background: var(--clr-white);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
 }
@@ -108,7 +129,7 @@ th, td {
 
 th {
     background: #333;
-    color: white;
+    color: var(--clr-white);
 }
 
 .create-plan {
@@ -142,5 +163,5 @@ form input, form textarea {
 
 #discount {
     background: #f4a261;
-    color: white;
+    color: var(--clr-white);
     }
