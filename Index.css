@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,7 +24,7 @@ button:hover {
     background: #555;
 }
 
-/* Header */
+
 header nav ul {
     display: flex;
     justify-content: space-around;
@@ -39,7 +39,7 @@ nav a {
     text-decoration: none;
 }
 
-/* Hero Section */
+
 #hero {
     text-align: center;
     padding: 50px;
@@ -53,7 +53,7 @@ nav a {
     margin-top: 20px;
 }
 
-/* Sitters Section */
+
 #sitters {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -76,7 +76,7 @@ nav a {
     margin: 10px auto;
 }
 
-/* Services Section */
+
 #services, #team, #trust-safety, #pricing, #discount, #contact, #about {
     padding: 30px;
     text-align: center;
@@ -89,7 +89,7 @@ nav a {
     margin-bottom: 15px;
 }
 
-/* Pricing Table */
+
 table {
     width: 80%;
     margin: auto;
@@ -119,7 +119,7 @@ th {
     background: #555;
 }
 
-/* Contact Section */
+
 form input, form textarea {
     display: block;
     width: 80%;
@@ -127,7 +127,7 @@ form input, form textarea {
     margin: 10px auto;
 }
 
-/* Section Images */
+
 #trust-safety img, #about img, #team img, #discount img {
     width: 80%;
     display: block;
@@ -135,7 +135,7 @@ form input, form textarea {
     border-radius: 10px;
 }
 
-/* Discount Offer */
+
 #discount {
     background: #f4a261;
     color: white;
