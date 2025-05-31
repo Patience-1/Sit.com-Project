@@ -25,8 +25,8 @@
         <h1>Hey Busy Parents</h1>
         <p>We do all the work for your children</p>
         <div class="hero-buttons">
-        <button onclick="findSitter()">Find a Sitter</button>
-               <button onclick="becomeSitter()">I'm a Sitter</button>
+        <button>Find a Sitter</button>
+        <button>I'm a Sitter</button>
         </div>
     </section>
 
@@ -47,94 +47,8 @@
             <img src="images/BintuAbdul.jpg" alt="Bintu abdul">
             <p>Bintu Abdul  Age 29 <br> Zaria, Kaduna Nigeria</p>
         </div>
-    </div>
-    </section>
-        
-    </section>     
-        <section id="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>In-Home Babysitting</h3>
-            <p>Enjoy peace of mind with trusted sitters who care for your child at home.</p>
         </div>
-        <div class="service">
-            <h3>Flexible Scheduling</h3>
-            <p>Part-time, full-time, or just a few hours—we adjust to your routine.</p>
-        </div>
-        <div class="service">
-            <h3>Evening & Weekend Care</h3>
-            <p>Need last-minute care? We've got reliable babysitters available at all times.</p>
-        </div>
-                </section>
-
-     <section id="pricing">
-        <h2>Price Tables</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Plan</th>
-                    <th>Price (¥)</th>
-                    <th>Features</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Standard Plan</td>
-                    <td>45,000</td>
-                    <td>Basic babysitting services</td>
-                     <td><button class="create-plan">Create Plan</button></td>
-                </tr>
-                <tr>
-                    <td>Premium Plan</td>
-                    <td>73,000</td>
-                    <td>Includes feeding & homework assistance</td>
-                    <td><button class="create-plan">Create Plan</button></td>
-                </tr>
-                <tr>
-                    <td>Unlimited Plan</td>
-                    <td>100,000</td>
-                    <td>Travel, vacation babysitting & medical appointments</td>
-                       <td><button class="create-plan">Create Plan</button></td>
-                </tr>
-            </tbody>
-        </table>
-     </section>
-    
-    <section id="discount">
-    <h2>Limited Offer: Get 10% Off!</h2>
-    <p>Enjoy **10% off** for every booking of more than two children. Don't miss out on this special promotion!</p>
-           
-    <img src="images/discount.jpg" alt="Discount Offer">
-    <button onclick="subscribeOffer()">Subscribe Now</button>
     </section>
-
-    <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>Have questions or need assistance? Reach out to us!</p>
-
-    <form id="contactForm">
-        <label for="email">Enter your email:</label>
-        <input type="email" id="email" required placeholder="yourname@example.com">
-        
-        <label for="message">Your Message:</label>
-        <textarea id="message" required placeholder="Type your message here..."></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-
-    <div id="contactDetails">
-        <p>Email: <a href="mailto:sitts.com@gmail.com">sitts.com@gmail.com</a></p>
-        <p>Phone: +233 24 370 3930</p>
-    </div>
-    </section>
-
-        <section id="team">
-        <h2>Our Team</h2>
-        <p>We work with the best hands! Our experienced babysitters provide a safe, fun, and nurturing environment for your child.</p>
-                <img src="images/team.jpg" alt="Our Team">
-        </section>
-        </section>
-    
 
     <section id="safety">
         <h2>Focused on Trust & Safety</h2>
@@ -178,27 +92,27 @@
                 <p>Abuja, NIgeria</p>
             </div>
         </div>
-        <button>Find a Sitter</button>
+        <button type="button">Find a Sitter</button>
     </section>
 
     <section id="Services">
         <h2><span>Our</span> Services</h2>
 
         <div class="serve">
-            <ul>
-                <li>In-Home Babysitting</li>
-                <p>Enjoy peace of mind with our trusted sitters who
+            <dl>
+                <dt>In-Home Babysitting</dt>
+                <dd>Enjoy peace of mind with our trusted sitters who
                     care for your child right in the comfort of your home.
-                </p>
-                <li>Flexible Scheduling</li>
-                <p>Whether its's part-time, full-time, or just few hours, we offer babysitting
+                </dd>
+                <dt>Flexible Scheduling</dt>
+                <dd>Whether its's part-time, full-time, or just few hours, we offer babysitting
                     services that fit seamlessly into your routine.
-                </p>
-                <li>Evening & Weekend Care</li>
-                <p>Going out or working late? We've got you covered with reliable
-                    babysiters available nights, weekends, and even on short notice.
-                </p>
-            </ul>
+                </dd>
+                <dt>Evening & Weekend Care</dt>
+                <dd>Going out or working late? We've got you covered with reliable
+                    babysitters available nights, weekends, and even on short notice.
+                </dd>
+            </dl>
         </div>
         <button>See More</button>
     </section>
@@ -206,7 +120,7 @@
     <section id="AboutUs">
         <h2>About us</h2>
         <p>So Much More Than A Babysitter</p>
-        <div>
+        <div class="about">
             <img src="images/image6.jpg" alt=" A Sitter playing with three children ">
             <p>At Sits.com we believe every child deserves nurturing, safety, and joy.
                 our team of experienced, background checked babysitters is passionate about creating
@@ -216,9 +130,10 @@
                 personal, and full of heart. Because your family is our family.
             </p>
         </div>
-        <h2>Our Team</h2>
-        <p>We Work With The Best Hands</p>
-        <p>Meet the heart of Sits.com! Our dedicated
+        <div class="about">
+            <h2>Our Team</h2>
+            <p>We Work With The Best Hands</p>
+            <p>Meet the heart of Sits.com! Our dedicated
             team of experienced and caring babysitters
             are passionate about providing your little
             ones with a safe, fun, and nurturing environment.
@@ -233,6 +148,69 @@
         </p>
         <img src="images/image7.jpg" alt=" A picture of 3 sitters">
         </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Price Tables</h2>
+        <p> Find the perfect plan for your kids</p>
+        <div class="plan">
+            <h3>Standard Plan <br> #45,000</h3>
+            <p>Per user hour for six months</p>
+            <ul>
+                <li>Feeding</li>
+                <li>Bathing</li>
+                <li>Home work</li>
+            </ul>
+            <button class="create-plan"> Create Plan</button>
+        </div>
+        <div class="plan">
+            <h3>Premium Plan <br> #75,000</h3>
+            <p>Per user hour includes more than two children
+                for six months</p>
+            <ul>
+                <li>Pet Care</li>
+                <li>Travel/Vacations</li>
+                <li>School/Doctors appointments</li>
+                <li>Transportation</li>
+                <li>Other errands</li>
+            </ul>
+            <button class="create-plan"> Create Plan</button>
+        </div>
+        <div class="plan">
+            <h3>Unlimited Plan <br> #100,000</h3>
+            <p>Per user hour for up to ten children
+                for more than six months
+            </p>
+            <button class="create-plan"> Create Plan</button>
+        </div>
+        <div class="discount">
+        <h2>Discount offer</h2>
+        <img src="images/discount.jpg" alt="Discount Offer">
+        <p>Get 10% off for every booking for more than 
+            two children. <br>Limited offer
+        </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contactus">
+            <h2>Get in Touch</h2>
+            <p> sitts.com@gmail.com</p>
+            <p> +233 24 370 3830</p>
+        </div>
+        <div class="contactus">
+            <ul>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Service</li>
+                <li>Job</li>
+            </ul>
+        </div class="contactus">
+        <form action="subscribe">
+        <button type="Submit"> Subscribe</button><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        </form>
+         </div>
     </section>
 </body>
 </html>
