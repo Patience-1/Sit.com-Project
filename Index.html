@@ -21,51 +21,130 @@
     </header>
 
     <section id="hero">
+        <img src="images/image1.jpg" alt=" A picture of a mother and her daughter dancing">
         <h1>Hey Busy Parents</h1>
         <p>We do all the work for your children</p>
         <button onclick="findSitter()">Find a Sitter</button>
+        <button onclick="iamasitter()">I'm a Sitter</button>
     </section>
 
     <section id="sitters">
         <h2>Meet Few Of Our Sitters</h2>
-
-        <label for="locationFilter">Select Location:</label>
-        <select id="locationFilter">
-            <option value="all">All Locations</option>
-            <option value="Lagos">Lagos, Nigeria</option>
-            <option value="Abuja">Abuja, Nigeria</option>
-            <option value="Benin">Benin, Nigeria</option>
-        </select>
+        <p>Below are some of our outstanding sitters. We currently have a network of 3000 sitters.</p>
 
         <div id="sitterList">
-            <div class="sitter" data-location="Lagos">Nike Ajao - Lagos</div>
-            <div class="sitter" data-location="Abuja">Bintu Abdul - Abuja</div>
-            <div class="sitter" data-location="Benin">Mary Jay - Benin</div>
+        <div class="sitter" data-location="Abuja">
+            <img src="images/ElizabethLewis.jpg" alt="Elizabeth lewis">
+            <p>Elizabeth lewis  Age 35 <br> Abuja, Nigeria</p>
+        </div>
+        <div class="sitter" data-location="Onitsha">
+            <img src="images/ChizomJohn.jpg" alt="Chizom John">
+            <p>Chizom John  Age 32 <br> Onitsha, Anambra Nigeria</p>
+        </div>
+        <div class="sitter" data-location="Zaria">
+            <img src="images/BintuAbdul.jpg" alt="Bintu abdul">
+            <p>Bintu Abdul  Age 29 <br> Zaria, Kaduna Nigeria</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="safety">
+        <h2>Focused on Trust & Safety</h2>
+        <p>Our dedicated team champions Safety procedures across our
+            platform everyday. We also offer a suite of screening tools
+            that allow families to hire Sitter team with confidence.
+        </p>
+        <div class="procedures"> 
+            <ul>
+                <li> Screening tools for families</li>
+                <p> Secure messaging, interview booking, background check options
+                    for extra peace of mind</p>
+                <li> Trusted community </li>
+                <p> Detailed profiles, ratings & reviews from local families and
+                    references contact information</p>
+                 <li> 100% Sitter Verification </li>
+                 <p>Scam prevention, family watchdog screening, Sitter ID
+                    authentication and ongoing site content monitoring</p>
+            </ul>
+        </div>
+
+        <div class="circle">
+            <p>Sitter <br>Nike ajao <br> Lagos, Nigeria</p>
+        </div>
+
+        <div class="sitter-list">
+            <p>Select sitter <br> Available for work </p>
+            <div>
+                <img src="" alt="">
+                <p>Mary Jay</p>
+                <p>Benin, Edo State NIgeria</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p>Nike Ajao</p>
+                <p>Lagos, NIgeria</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p>Bintu Abdul</p>
+                <p>Abuja, NIgeria</p>
+            </div>
+        </div>
+        <button>Find a Sitter</button>
+    </section>
+
+    <section id="Services">
+        <h2><span>Our</span> Services</h2>
+
+        <div class="serve">
+            <ul>
+                <li>In-Home Babysitting</li>
+                <p>Enjoy peace of mind with our trusted sitters who
+                    care for your child right in the comfort of your home.
+                </p>
+                <li>Flexible Scheduling</li>
+                <p>Whether its's part-time, full-time, or just few hours, we offer babysitting
+                    services that fit seamlessly into your routine.
+                </p>
+                <li>Evening & Weekend Care</li>
+                <p>Going out or working late? We've got you covered with reliable
+                    babysiters available nights, weekends, and even on short notice.
+                </p>
+            </ul>
+        </div>
+        <button>See More</button>
+    </section>
+
+    <section id="AboutUs">
+        <h2>About us</h2>
+        <p>So Much More Than A Babysitter</p>
+        <div>
+            <img src="images/image6.jpg" alt=" A Sitter playing with three children ">
+            <p>At Sits.com we believe every child deserves nurturing, safety, and joy.
+                our team of experienced, background checked babysitters is passionate about creating
+                a fun and secure environment for your little ones. Whether it's storytime, playtime,
+                or bedtime, we tailor care to each child's needs and personality. We're not just sitters,
+                we're trusted partners in your parenting journey. Discover childcare that's professional,
+                personal, and full of heart. Because your family is our family.
+            </p>
+        </div>
+        <h2>Our Team</h2>
+        <p>We Work With The Best Hands</p>
+        <p>Meet the heart of Sits.com! Our dedicated
+            team of experienced and caring babysitters
+            are passionate about providing your little
+            ones with a safe, fun, and nurturing environment.
+            Each member is thoroughly vetted, background-checked,
+            and possesses a genuine love for children.
+            We understand the importance of trust and reliability
+            when it comes to your family, and we are committed to
+            exceeding your expectations. Get to know our wonderful
+            sitters and find the perfect match for your family's needs
+            with Sits.com. We're here to give you peace of mind, one
+            happy child at a time.
+        </p>
+        <img src="images/image7.jpg" alt=" A picture of 3 sitters">
         </div>
     </section>
-
-    <section id="signup">
-        <h2>Sign Up</h2>
-        <form id="signupForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" required minlength="6">
-
-            <button type="submit">Sign Up</button>
-        </form>
-
-        <div id="signupMessage"></div>
-    </section>
-
-    <footer>
-        <p>© 2025 Sitter Platform</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
-          </html>
+</html>
