@@ -1,4 +1,8 @@
-
+:root {
+    --clr-blu: #5f8fa5;
+    --clr-sec: #f3d89f;
+    --clr-last: #979797;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
