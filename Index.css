@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,25 @@ body {
     background: #f8f9fa;
 }
 
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Header */
 header nav ul {
     display: flex;
     justify-content: space-around;
@@ -14,12 +34,26 @@ header nav ul {
     color: white;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
 #hero {
     text-align: center;
     padding: 50px;
     background: #f4a261;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Sitters Section */
 #sitters {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -34,21 +68,75 @@ header nav ul {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#signup {
+.sitter img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Services Section */
+#services, #team, #trust-safety, #pricing, #discount, #contact, #about {
     padding: 30px;
     text-align: center;
 }
 
-form input, select {
+.service, .safety-feature {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Pricing Table */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background: #333;
+    color: white;
+}
+
+.create-plan {
+    padding: 8px 15px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.create-plan:hover {
+    background: #555;
+}
+
+/* Contact Section */
+form input, form textarea {
     display: block;
     width: 80%;
     padding: 10px;
     margin: 10px auto;
 }
 
-button {
-    padding: 10px;
-    background: #333;
-    color: white;
-    cursor: pointer;
+/* Section Images */
+#trust-safety img, #about img, #team img, #discount img {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
 }
+
+/* Discount Offer */
+#discount {
+    background: #f4a261;
+    color: white;
+    }
