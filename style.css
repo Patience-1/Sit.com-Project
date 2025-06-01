@@ -77,8 +77,6 @@ nav a {
 div button {
     border-radius: 5px; 
 }
-
-
 #sitters {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -96,11 +94,17 @@ div button {
 .sitter img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 20%;
     display: block;
     margin: 10px auto;
 }
-
+.meet-sitters {
+    text-align: start;
+    font-family: 'Times New Roman', Times;
+    font-style: italic;
+    font-weight: 600px;
+    font-size: 2rem;
+}
 
 #services, #team, #trust-safety, #pricing, #discount, #contact, #about {
     padding: 30px;
@@ -113,8 +117,35 @@ div button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
 }
-
-
+.abt-us {
+    text-align: start;
+    font-family: 'Times New Roman', Times;
+    font-style: italic;
+    font-weight: 600px;
+    font-size: 2rem;
+}
+.about img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.about {
+    padding: 5px 2px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+.intro {
+    flex: 1;
+    line-height: 1.6em;
+}
+#AboutUs {
+    padding-left: 1.6em;
+}
+.ourt-container{
+    margin-top: 3em;
+}
 table {
     width: 80%;
     margin: auto;
