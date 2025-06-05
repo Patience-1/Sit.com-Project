@@ -92,8 +92,8 @@ div button {
 }
 
 .sitter img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 250px;
     border-radius: 20%;
     display: block;
     margin: 10px auto;
@@ -163,6 +163,24 @@ th {
     color: var(--clr-white);
 }
 
+/* pricing */
+.plans{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.plan{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+.plan h3{
+    font-size: 2.5rem;
+    
+}
+
 .create-plan {
     padding: 8px 15px;
     background: #333;
@@ -204,8 +222,11 @@ form input, form textarea {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid black;
     height: 50vh;
+}
+
+.logo{
+    width: 200px;
 }
 
 .contactus h2{
