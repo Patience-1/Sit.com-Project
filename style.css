@@ -43,7 +43,10 @@ button {
     border: none;
     cursor: pointer;
 }
-
+button a {
+    text-decoration: none;
+    color: var(--clr-white);
+}
 button:hover {
     background: #555;
 }
