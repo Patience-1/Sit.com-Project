@@ -94,3 +94,17 @@ body {
 .register-link p a:hover {
     text-decoration: underline;
 }
+@media (max-width: 576px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+    
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .forgot-password {
+        margin-top: 10px;
+    }
+}
