@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('nav.toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const links = document.querySelectorAll('.navbar a');
+  const currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"
+
+  links.forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+});
+
+/*document.addEventListener('DOMContentLoaded', function() {
     
     const navToggle = document.createElement('button');
     navToggle.className = 'nav-toggle';
@@ -8,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navToggle.addEventListener('click', () => {
         document.querySelector('nav').style.display = 
             document.querySelector('nav').style.display === 'block' ? 'none' : 'block';
-    });
+    });*/
 
     
     const words = ['Parents', 'Moms', 'Dads', 'Guardians'];
@@ -23,14 +44,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 3000);
 
     
-    document.querySelector('#sitters').insertAdjacentHTML('afterbegin', `
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-location="all">All Sitters</button>
-            <button class="filter-btn" data-location="Abuja">Abuja</button>
-            <button class="filter-btn" data-location="Onitsha">Onitsha</button>
-            <button class="filter-btn" data-location="Zaria">Zaria</button>
-        </div>
-    `);
+   document.querySelectorAll('.sitter-box a').forEach(box => {
+    box.addEventListener('click', () => {
+        window.location.href = 'sitters.html';
+    });
+});
+
 
     document.querySelector('.filter-buttons').addEventListener('click', (e) => {
         if (e.target.classList.contains('filter-btn')) {
@@ -60,4 +79,3 @@ document.addEventListener('DOMContentLoaded', function() {
         alert(email.includes('@') ? `Thanks for subscribing with ${email}!` : 'Please enter a valid email');
         e.target.reset();
     });
-});
