@@ -9,14 +9,11 @@ The **Babysitter Platform** is a web application designed to connect busy parent
 ✅ **Dynamic Sitter Filtering** by location  
 ✅ **User Authentication** for sign-up & login validation  
 ✅ **Trust & Safety Features** for verification and security  
-✅ **Pricing Plans** with customized booking options  
-✅ **Discount Offers** for multiple-child bookings  
 ✅ **Contact Form** for user inquiries  
 
 ## **Usage**
 ### **Finding a Babysitter**
 - Click the `"Find a Sitter"` button to browse available sitters.
-- Use the `"Select Location"` dropdown to filter sitters by city.
 
 ### **Trust & Safety**
 - Secure messaging, interview booking, sitter ID authentication, and scam prevention ensure a reliable babysitting experience.
