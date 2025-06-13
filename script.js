@@ -1,37 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
-    const navToggle = document.createElement('button');
-    navToggle.className = 'nav-toggle';
-    navToggle.innerHTML = '☰';
-    document.querySelector('header').prepend(navToggle);
-    
-    navToggle.addEventListener('click', () => {
-        document.querySelector('nav').style.display = 
-            document.querySelector('nav').style.display === 'block' ? 'none' : 'block';
-    });
+  function toggleMenu() {
+    const navLinks = document.getElementsByClassName("nav-links");
+    navLinks.classList.toggle("active");
+  }
 
-    
+
+    //highlight active navbar link
+  const navlinks = document.querySelectorAll('.navbar a');
+  const currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"
+
+  navlinks.forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+
+  // Parent text animation
     const words = ['Parents', 'Moms', 'Dads', 'Guardians'];
+    const parentText = document.getElementById('parents-text');
+    if (!parentText) return;
+
     let currentIndex = 0;
     setInterval(() => {
-        const parentText = document.getElementById('parents-text');
         parentText.style.opacity = 0;
         setTimeout(() => {
-            parentText.textContent = words[currentIndex = (currentIndex + 1) % words.length];
+            currentIndex = (currentIndex + 1) % words.length;
+            parentText.textContent = words[currentIndex];
             parentText.style.opacity = 1;
         }, 500);
     }, 3000);
 
-    
-    document.querySelector('#sitters').insertAdjacentHTML('afterbegin', `
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-location="all">All Sitters</button>
-            <button class="filter-btn" data-location="Abuja">Abuja</button>
-            <button class="filter-btn" data-location="Onitsha">Onitsha</button>
-            <button class="filter-btn" data-location="Zaria">Zaria</button>
-        </div>
-    `);
+    //sitter box click redirect
+    box.addEventListener('click', () => {
+        window.location.href = 'sitters.html';
+    });
+});
 
+    //Sitter filter buttons
     document.querySelector('.filter-buttons').addEventListener('click', (e) => {
         if (e.target.classList.contains('filter-btn')) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -43,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    
+    //smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
             e.preventDefault();
@@ -51,13 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
     });
-
-    
-                          
+        
+   //email subscription form 
     document.querySelector('form[action="subscribe"]')?.addEventListener('submit', (e) => {
         e.preventDefault();
         const email = e.target.querySelector('input[type="email"]').value;
         alert(email.includes('@') ? `Thanks for subscribing with ${email}!` : 'Please enter a valid email');
         e.target.reset();
     });
-});

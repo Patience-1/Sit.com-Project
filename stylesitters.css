@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Libre-Baskerville: 'Libre Baskerville';
+    --white: #f9f9f7;
+    --blue1: #5F8FA5;
+    --brown: #F3D89F;
+    --blue2: #979797;
+    --blue3: #051C36;
+}
+body{
+    background-color: white;
+    font-family: 'Libre Baskerville';
+    padding: 1rem;
+    letter-spacing: 0;
+}
+.sittergrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+     "item1 item2"
+     "item3 item4"
+     "item5 item6"; 
+    width: 100%;
+    max-width: 90%;
+    grid-template-columns:  repeat(2, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1rem; 
+}
+.grid-container > div {
+    border-radius: 0.5rem;
+    padding:1.25rem;
+    background-color: var(--blue1);
+    
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+.grid-container img{
+    width:100%;
+}
