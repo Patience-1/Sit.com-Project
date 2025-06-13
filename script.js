@@ -1,16 +1,10 @@
-/*document.addEventListener('DOMContentLoaded', function() {
-   const navToggle = document.createElement('button');
-    navToggle.className = 'nav-toggle';
-    navToggle.innerHTML = '☰';
-    document.querySelector('header').prepend(navToggle);
+document.addEventListener('DOMContentLoaded', function() {
+  function toggleMenu() {
+    const navLinks = document.getElementsByClassName("nav-links");
+    navLinks.classList.toggle("active");
+  }
 
-    navToggle.addEventListener('click', () => {
-        document.querySelector('nav').style.display = 
-            document.querySelector('nav').style.display === 'block' ? 'none' : 'block';
-  });
-});*/
 
-document.addEventListener('DOMContentLoaded', function () {
     //highlight active navbar link
   const navlinks = document.querySelectorAll('.navbar a');
   const currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"

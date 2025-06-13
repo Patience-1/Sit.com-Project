@@ -24,13 +24,17 @@ body{
 }
 
 .navbar{
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
     background-color: var(--blue1);
     height:5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 .navbar img{
     width: 3rem;
@@ -46,12 +50,9 @@ body{
 
 nav a {
     text-decoration: none;
-    color: var(--blue2);
+    color: var(--blue3);
     font-weight: bold;
     text-transform: uppercase;
-    transition: background-color 0.3s;
-    position: relative;
-    z-index: 2;
 }
 .navbar h2{
     margin-left: 1rem;
@@ -64,7 +65,7 @@ nav a {
 .navbar button{
     border: none;
     border-radius: 4rem;
-    padding: 1.3rem 1.8rem;
+    padding: 1rem 1.8rem;
     color: white;
     background-color: var(--blue3);
     font-weight: 700;
@@ -80,11 +81,14 @@ nav a {
 a {
   pointer-events: auto;
 }
-
-@media (max-width: 768px) {
-
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--blue1);
+  cursor: pointer;
 }
-
 .hero-container{
     position: relative;
     padding-top: 5.5rem;
@@ -140,6 +144,69 @@ a {
 button:hover {
     background: var(--blue2);
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar button:last-of-type {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+}
+  .navbar button {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+  /* Hide toggle button on desktop */
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--blue2);
+  cursor: pointer;
+}
+.hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-words {
+    padding: 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 100%;
+    max-width: 300px;
+  }
+
 
 .our-story{
     margin-left: 6rem;
