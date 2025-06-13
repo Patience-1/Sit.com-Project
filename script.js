@@ -1,56 +1,49 @@
-document.addEventListener('DOMContentLoaded', function(){
-  const toggle = document.getElementById('nav.toggle');
-  const navLinks = document.getElementById('nav-links');
+/*document.addEventListener('DOMContentLoaded', function() {
+   const navToggle = document.createElement('button');
+    navToggle.className = 'nav-toggle';
+    navToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(navToggle);
 
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+    navToggle.addEventListener('click', () => {
+        document.querySelector('nav').style.display = 
+            document.querySelector('nav').style.display === 'block' ? 'none' : 'block';
   });
-});
+});*/
 
 document.addEventListener('DOMContentLoaded', function () {
-  const links = document.querySelectorAll('.navbar a');
+    //highlight active navbar link
+  const navlinks = document.querySelectorAll('.navbar a');
   const currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"
 
-  links.forEach(link => {
+  navlinks.forEach(link => {
     const linkPage = link.getAttribute('href');
     if (linkPage === currentPage) {
       link.classList.add('active');
     }
   });
-});
 
-/*document.addEventListener('DOMContentLoaded', function() {
-    
-    const navToggle = document.createElement('button');
-    navToggle.className = 'nav-toggle';
-    navToggle.innerHTML = '☰';
-    document.querySelector('header').prepend(navToggle);
-    
-    navToggle.addEventListener('click', () => {
-        document.querySelector('nav').style.display = 
-            document.querySelector('nav').style.display === 'block' ? 'none' : 'block';
-    });*/
-
-    
+  // Parent text animation
     const words = ['Parents', 'Moms', 'Dads', 'Guardians'];
+    const parentText = document.getElementById('parents-text');
+    if (!parentText) return;
+
     let currentIndex = 0;
     setInterval(() => {
-        const parentText = document.getElementById('parents-text');
         parentText.style.opacity = 0;
         setTimeout(() => {
-            parentText.textContent = words[currentIndex = (currentIndex + 1) % words.length];
+            currentIndex = (currentIndex + 1) % words.length;
+            parentText.textContent = words[currentIndex];
             parentText.style.opacity = 1;
         }, 500);
     }, 3000);
 
-    
-   document.querySelectorAll('.sitter-box a').forEach(box => {
+    //sitter box click redirect
     box.addEventListener('click', () => {
         window.location.href = 'sitters.html';
     });
 });
 
-
+    //Sitter filter buttons
     document.querySelector('.filter-buttons').addEventListener('click', (e) => {
         if (e.target.classList.contains('filter-btn')) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -62,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    
+    //smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
             e.preventDefault();
@@ -70,9 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
     });
-
-    
-                          
+        
+   //email subscription form 
     document.querySelector('form[action="subscribe"]')?.addEventListener('submit', (e) => {
         e.preventDefault();
         const email = e.target.querySelector('input[type="email"]').value;

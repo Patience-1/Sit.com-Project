@@ -82,11 +82,7 @@ a {
 }
 
 @media (max-width: 768px) {
-  .navbar h2,
-  .navbar button,
-  .hero-container img {
-    margin-left: 1rem;
-  }
+
 }
 
 .hero-container{
@@ -103,7 +99,7 @@ a {
 }
 .hero-words{
     position: relative;
-    top: -30rem;
+    top: -32rem;
     padding-left: 6.5rem;
     letter-spacing: 0.3rem;
 }
