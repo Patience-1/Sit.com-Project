@@ -40,7 +40,8 @@ body{
 .navbar ul {
     display: flex;
     list-style: none;
-    gap: 1.2rem;
+    gap: 1.5rem;
+    margin-left: 9rem;
 }
 
 nav a {
@@ -49,9 +50,11 @@ nav a {
     font-weight: bold;
     text-transform: uppercase;
     transition: background-color 0.3s;
+    position: relative;
+    z-index: 2;
 }
 .navbar h2{
-    margin-left: 9rem;
+    margin-left: 1rem;
     color: var(--blue3);
     font-size: 1.6rem;
 }
@@ -65,11 +68,19 @@ nav a {
     color: white;
     background-color: var(--blue3);
     font-weight: 700;
-    margin-left: 20.5rem;
+    margin-left: 15.5rem;
 }
 .navbar button:hover{
     color: var(--blue2);
 }
+#nav-links {
+  position: relative;
+  z-index: 2;
+}
+a {
+  pointer-events: auto;
+}
+
 @media (max-width: 768px) {
   .navbar h2,
   .navbar button,
