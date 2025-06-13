@@ -94,17 +94,25 @@ body {
 .register-link p a:hover {
     text-decoration: underline;
 }
-@media (max-width: 576px) {
-    .login-container {
-        padding: 30px 20px;
+@media screen and (max-width:800px) {
+    .wrapper{
+        max-width: 70%;
+    }
+    .input-box input {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .btn {
+        height: auto;
+        padding: 1rem;
+        font-size: 1rem;
     }
     
-    .form-options {
-        flex-direction: column;
-        align-items: flex-start;
+    .wrapper h1 {
+        font-size: 1.4rem;
     }
-    
-    .forgot-password {
-        margin-top: 10px;
+    .wrapper p {
+        font-size: 1rem;
     }
 }
