@@ -196,14 +196,15 @@ button:hover {
   }
 
   .hero-buttons {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
   .btn1,
   .btn2 {
+    margin-top: 0.8rem;
     width: 100%;
-    max-width: 300px;
+    max-width: 40%;
   }
 }
 
@@ -229,6 +230,37 @@ button:hover {
     max-width: 100%;
     height: 40vh;
 }
+@media screen and (max-width: 768px) {
+  .our-story {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .story-words {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .story-words h3 {
+    font-size: 1.1rem;
+  }
+
+  .story-images {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 1rem;
+    margin-right: 0;
+    height: auto;
+  }
+
+  .story-images img {
+    width: 80%;
+    height: auto;
+  }
+}
+
 #sitters{
     padding-top: 7rem;
     padding-left: 5rem;
@@ -390,6 +422,66 @@ button:hover {
     border-radius: 50%;
     margin-right: 0.5rem;
 }
+@media screen and (max-width: 900px) {
+  #safety {
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: auto;
+  }
+
+  .image-box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mom {
+    width: 100%;
+    max-height: none;
+    margin-left: 1rem;
+    margin-right: 1.4rem;
+  }
+
+  .sitter-selector {
+    position: static;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-top: 1.2rem;
+  }
+
+  .sitter-box {
+    justify-content: center;
+  }
+
+  .sitter-box img {
+    width: 3rem;
+  }
+  .safety-features h3 {
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .pp {
+    margin: 0.4rem 0;
+    font-size: 0.85rem;
+  }
+
+  #safety h2 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .sitter-box p {
+    font-size: 0.65rem;
+  }
+
+  .sitter-selector h4 {
+    font-size: 0.9rem;
+  }
+}
 
 .services-container{
     margin: 3.5rem 10rem;
@@ -473,6 +565,58 @@ button:hover {
 }
 .btn4 button:hover{
     background: #555;
+}
+@media screen and (max-width: 768px) {
+  .serve-contain {
+    margin: 13rem 1rem 0 1rem;
+    
+  }
+  .title {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .full-text {
+    padding: 1rem;
+  }
+
+  .serve h3 {
+    font-size: 1rem;
+    margin: 1rem 0;
+    align-items: center;
+  }
+
+  .serve h3 img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .serve p {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .btn4 {
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .btn4 button {
+    width: 50%;
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .serve h3 {
+    flex-direction
+  }
 }
 
 #AboutUs{
@@ -558,8 +702,7 @@ ul a:hover{
 .btn9{
     border-radius: 1rem;
     background-color: var(--blue3);
-    border: none;
-    
+    border: none;   
 }
 
 .subscribe input{
@@ -607,71 +750,91 @@ ul a:hover{
     height: 1.8rem;
     margin-right: 1rem;
 }
-/* Hide menu icon on desktop */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 1rem;
-  }
-
-  .navbar h2 {
-    margin-left: 0;
-    flex: 1;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  #nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--blue1);
-    margin-top: 1rem;
-    padding: 1rem 0;
-  }
-
-  #nav-links li {
-    margin: 0.5rem 0;
-    text-align: center;
-  }
-
-  #nav-links.show {
+@media screen and (max-width: 768px) {
+  #contact {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    height: 60vh;
+    margin-top: 12rem;
   }
 
-  .navbar button {
-    display: none; /* Hide contact button on mobile or move it inside menu if needed */
+  .contactus,
+  .links,
+  .subscribe {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .contactus h2 {
+    font-size: 1rem;
+  }
+  .contactus p{
+    font-size: 0.6rem;
+  }
+  .mail,
+  .phone{
+    gap: 0.6rem;
+    width: 2%;
+    height: 2%;
+  }
+
+  .links ul { 
+    font-size: 0.95rem;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .subscribe {
+    align-items: center;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .subscribe button {
+    width: 100%;
+  }
+
+  .socials img,
+  .payment img {
+    width: 1.6rem;
+    height: auto;
   }
 }
 
+@media screen and (max-width: 480px) {
+  .contactus p,
+  .links ul li,
+  .subscribe input,
+  .subscribe button {
+    font-size: 0.9rem;
+  }
+
+  .contactus img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     padding: 1rem;
-  }
-
-  .navbar h2, .navbar button {
-    margin-left: 0;
-    margin-top: 0.5rem;
+    align-items: center;
   }
 
   .navbar ul {
     flex-direction: column;
     gap: 0.5rem;
     padding-top: 1rem;
+  }
+  .navbar button{
+    margin-left: 5rem;
   }
 
   .hero-container img {
@@ -743,13 +906,6 @@ ul a:hover{
   .btn4 {
     margin-left: 0;
     text-align: center;
-  }
-
-  #contact {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
-    height: auto;
   }
 
   .subscribe {
