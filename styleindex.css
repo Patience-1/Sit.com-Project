@@ -26,7 +26,6 @@ body{
 .navbar{
     position: fixed;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
     background-color: var(--blue1);
@@ -55,7 +54,6 @@ nav a {
     text-transform: uppercase;
 }
 .navbar h2{
-    margin-left: 1rem;
     color: var(--blue3);
     font-size: 1.6rem;
 }
