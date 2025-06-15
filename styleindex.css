@@ -46,9 +46,6 @@ body{
     gap: 1.5rem;
     margin-left: 9rem;
 }
-.navbar ul>li{
-  width: 0.5rem;
-}
 
 nav a {
     text-decoration: none;
@@ -167,7 +164,7 @@ button:hover {
     padding: 1rem 0;
     position: absolute;
     top: 5rem;
-    z-index: 200;
+    z-index: 2;
   }
   
   #nav-links.open {
