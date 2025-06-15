@@ -415,6 +415,7 @@ button:hover {
     margin-left: 2rem;
     margin-right: 2rem;
     height: auto;
+    font-size: 1rem;
   }
 
   .image-box {
@@ -425,8 +426,8 @@ button:hover {
   }
 
   .mom {
-    width: 100%;
-    max-height: none;
+    width: 80%;
+    max-height: 100vh;
     margin-left: 1rem;
     margin-right: 1.4rem;
   }
