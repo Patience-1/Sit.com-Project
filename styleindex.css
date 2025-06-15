@@ -282,6 +282,7 @@ button:hover {
   max-height: auto;
   text-align: center;
   font-weight: 500;
+  margin-right: 2.5rem;
 }
 .pin {
   font-size: 1rem;
