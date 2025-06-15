@@ -158,8 +158,8 @@ button:hover {
   #nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
-    max-width: 30%;
+    width: 70%;
+    max-width: 60%;
     gap: 1rem;
     padding: 1rem 0;
     position: absolute;
