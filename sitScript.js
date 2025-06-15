@@ -38,6 +38,16 @@ document.addEventListener('DOMContentLoaded', function () {
       preview.style.display = "none";
     }
   });
+  const bookButton = document.getElementById("bookButton");
+
+bookButton.addEventListener("click", function () {
+  if (!this.classList.contains("unavailable")) {
+    this.textContent = "Unavailable";
+    this.classList.add("unavailable");
+    this.disabled = true; // Prevent further clicks
+  }
+});
+
   
 
 

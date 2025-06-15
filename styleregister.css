@@ -104,30 +104,53 @@ input {
 .register-link p a:hover {
     text-decoration: underline;
 }
-@media screen and (max-width:800px) {
-    .wrapper{
-        margin: 1rem;
-        max-width: 75%;
-    }
-    .input-row{
-        display: flex;
-        flex-direction: column;
-    }
-    .input-box input {
-        font-size: 1rem;
-        width: 60%;
-    }
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 1.5rem;
+    max-width: 95%;
+    margin: 1rem auto;
+  }
 
-    .btn {
-        height: auto;
-        padding: 1rem;
-        font-size: 1rem;
-    }
-    
-    .wrapper h1 {
-        font-size: 1.5rem;
-    }
-    .wrapper p {
-        font-size: 1rem;
-    }
+  .wrapper h1 {
+    font-size: 1.4rem;
+  }
+
+  .wrapper p {
+    font-size: 0.9rem;
+  }
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .input-box label {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .input-box input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.6rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .register-link {
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+  }
+
+  #preview {
+    max-width: 100%;
+    height: auto;
+  }
 }
