@@ -62,7 +62,8 @@ nav a {
 }
 #nav-links {
   position: relative;
-  z-index: 2;
+  display: flex;
+  z-index: 1;
 }
 a {
   pointer-events: auto;
@@ -71,10 +72,12 @@ a {
   display: none;
   font-size: 2rem;
   background: none;
+  background-color: none ;
   border: none;
-  color: var(--blue1);
+  color: var(--blue3);
   cursor: pointer;
 }
+
 .hero-container{
     position: relative;
     padding-top: 5.5rem;
@@ -135,6 +138,15 @@ button:hover {
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
+    padding-left: 10rem;
+    background-color: none;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .navbar h2 {
+    font-size: 1.2rem;
   }
 
   #nav-links {
@@ -143,34 +155,22 @@ button:hover {
     width: 100%;
     gap: 1rem;
     padding: 1rem 0;
+    background-color: var(--blue1);
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    z-index: 200;
   }
-
-  #nav-links.active {
-    display: flex;
-  }
-
+  
+#nav-links.open {
+  display: flex;
+}
+  
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .navbar button:last-of-type {
-    align-self: flex-start;
-    margin-top: 0.5rem;
-  }
-  .navbar button {
-    align-self: flex-start;
-    margin-top: 0.5rem;
-  }
-  /* Hide toggle button on desktop */
-.nav-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: var(--blue2);
-  cursor: pointer;
-}
 .hero-container {
     flex-direction: column;
     align-items: center;

@@ -1,4 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  function toggleMenu() {
+  const navLinks = document.getElementById("nav-links");
+  navLinks.classList.toggle("open");
+}
+
+
+    //highlight active navbar link
+  const navlinks = document.querySelectorAll('.navbar a');
+  const currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"
+
+  navlinks.forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+
+  // Parent text animation
+    const words = ['Parents', 'Moms', 'Dads', 'Guardians'];
+    const parentText = document.getElementById('parents-text');
+    if (!parentText) return;
+
+    let currentIndex = 0;
+    setInterval(() => {
+        parentText.style.opacity = 0;
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % words.length;
+            parentText.textContent = words[currentIndex];
+            parentText.style.opacity = 1;
+        }, 500);
+    }, 3000);
+
   // Book buttons (for multiple sitters)
   const bookButtons = document.querySelectorAll(".btn");
 
