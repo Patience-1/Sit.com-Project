@@ -137,7 +137,6 @@ button:hover {
 @media (max-width: 1200px) {
   .nav-toggle {
     display: block;
-    padding-left: 10rem;
     background-color: none;
   }
   .navbar {
@@ -166,9 +165,9 @@ button:hover {
     z-index: 200;
   }
   
-#nav-links.open {
+  #nav-links.open {
   display: flex;
-}
+  }
 
 .hero-container {
     flex-direction: column;
@@ -647,8 +646,8 @@ form input, form textarea {
 }
 
 .contactus p{
-    font-size: 1.3rem;
-    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    padding-bottom: 0.8rem;
 }
 
 .links ul{
@@ -739,8 +738,9 @@ ul a:hover{
     flex-direction: row;
     align-items: center;
     padding: 0.5rem;
-    height: 60vh;
+    height: 40%;
     margin-top: 12rem;
+    gap: 1rem;
   }
 
   .contactus,
@@ -751,10 +751,7 @@ ul a:hover{
   }
 
   .contactus h2 {
-    font-size: 1rem;
-  }
-  .contactus p{
-    font-size: 0.6rem;
+    font-size: 1.3rem;
   }
   .mail,
   .phone{
@@ -764,7 +761,7 @@ ul a:hover{
   }
 
   .links ul { 
-    font-size: 0.95rem;
+    font-size: 0.6rem;
     gap: 1rem;
     padding: 0;
   }
@@ -793,7 +790,7 @@ ul a:hover{
   .links ul li,
   .subscribe input,
   .subscribe button {
-    font-size: 0.9rem;
+    font-size: 0.78rem;
   }
 
   .contactus img {
@@ -804,18 +801,18 @@ ul a:hover{
 
 @media (max-width: 1200px) {
   .hero-container img {
-    margin-left: 6rem;
+    margin-left: 0;
     height: auto;
-    width: 70%;
+    width: 100%;
   }
    .hero-words{
-    top: -12rem;
+    top: -10rem;
     padding-left: 0rem;
     font-size: 1.2rem;
   }
   
   .hero-buttons {
-    top: -12rem;
+    top: -10rem;
     padding-left: 0rem;
     font-size: 1.2rem;
   }
@@ -842,15 +839,14 @@ ul a:hover{
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .sitter-info {
+    font-size: 0.8rem;
+  }
 
   #safety {
     grid-template-columns: 1fr;
     margin-left: 2rem;
     height: auto;
-  }
-
-  .mom {
-    width: 100%;
   }
 
   .sitter-selector {
@@ -909,8 +905,8 @@ ul a:hover{
   .services-container, #AboutUs {
     margin: 5rem 15rem;
   }
-}
 
-.hero-words {
+  .hero-words {
   font-size: clamp(1rem, 2.5vw, 2rem);
+  }
 }
