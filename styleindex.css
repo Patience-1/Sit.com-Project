@@ -158,7 +158,6 @@ button:hover {
     background-color: var(--blue1);
     position: absolute;
     top: 5rem;
-    right: 1rem;
     z-index: 200;
   }
   
