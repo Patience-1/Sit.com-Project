@@ -1,11 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-  function toggleMenu() {
+ function toggleMenu() {
   const navLinks = document.getElementById("nav-links");
   navLinks.classList.toggle("open");
 }
-
-
+document.addEventListener("DOMContentLoaded", function (){
     //highlight active navbar link
   const navlinks = document.querySelectorAll('.navbar a');
   const currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"
@@ -16,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.add('active');
     }
   });
+});
 
   // Parent text animation
     const words = ['Parents', 'Moms', 'Dads', 'Guardians'];
@@ -32,17 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500);
     }, 3000);
 
-  // Book buttons (for multiple sitters)
-  const bookButtons = document.querySelectorAll(".btn");
-
-  bookButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const name = this.closest(".Lewis")?.querySelector("h1")?.textContent;
-      if (name) {
-        alert(`You have booked ${name}!`);
-      }
-    });
-  });
 
   // Password validation
   const form = document.querySelector("form");
@@ -78,22 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
-  // Single book button (with confirmation)
-  const bookButton = document.getElementById("bookButton");
-
-  if (bookButton) {
-    bookButton.addEventListener("click", function () {
-      if (!this.classList.contains("unavailable")) {
-        if (confirm("Are you sure you want to book this sitter?")) {
-          this.textContent = "Unavailable";
-          this.classList.add("unavailable");
-          this.disabled = true;
-        }
-      }
-    });
-  }
-});
 
   // Role-based redirect for register link
 window.addEventListener("DOMContentLoaded", () => {

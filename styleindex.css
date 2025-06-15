@@ -33,7 +33,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 2;
 }
 .navbar img{
     width: 3rem;
@@ -45,6 +45,9 @@ body{
     list-style: none;
     gap: 1.5rem;
     margin-left: 9rem;
+}
+.navbar ul>li{
+  width: 60%;
 }
 
 nav a {
@@ -60,11 +63,7 @@ nav a {
 .navbar a:active {
     background-color: white;
 }
-#nav-links {
-  position: relative;
-  display: flex;
-  z-index: 1;
-}
+
 a {
   pointer-events: auto;
 }
@@ -135,12 +134,18 @@ button:hover {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .nav-toggle {
     display: block;
     padding-left: 10rem;
     background-color: none;
   }
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    padding: 1rem;
+    align-items: center;
+   }
   .navbar ul {
     flex-direction: column;
     align-items: flex-end;
@@ -164,11 +169,6 @@ button:hover {
 #nav-links.open {
   display: flex;
 }
-  
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
 .hero-container {
     flex-direction: column;
@@ -215,7 +215,7 @@ button:hover {
     max-width: 100%;
     height: 40vh;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .our-story {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -408,7 +408,7 @@ button:hover {
     border-radius: 50%;
     margin-right: 0.5rem;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   #safety {
     grid-template-columns: 1fr;
     margin-left: 2rem;
@@ -552,7 +552,7 @@ button:hover {
 .btn4 button:hover{
     background: #555;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .serve-contain {
     margin: 13rem 1rem 0 1rem;
     
@@ -595,7 +595,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .title {
     font-size: 1.2rem;
   }
@@ -733,7 +733,7 @@ ul a:hover{
     margin-right: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #contact {
     display: flex;
     flex-direction: row;
@@ -788,7 +788,7 @@ ul a:hover{
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .contactus p,
   .links ul li,
   .subscribe input,
@@ -802,33 +802,21 @@ ul a:hover{
   }
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    height: auto;
-    padding: 1rem;
-    align-items: center;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    padding-top: 1rem;
-  }
-  .navbar button{
-    margin-left: 5rem;
-  }
-
+@media (max-width: 1200px) {
   .hero-container img {
-    margin-left: 0;
+    margin-left: 6rem;
     height: auto;
-    width: 100%;
+    width: 70%;
   }
-
-  .hero-words,
+   .hero-words{
+    top: -12rem;
+    padding-left: 0rem;
+    font-size: 1.2rem;
+  }
+  
   .hero-buttons {
-    top: -10rem;
-    padding-left: 2rem;
+    top: -12rem;
+    padding-left: 0rem;
     font-size: 1.2rem;
   }
 
