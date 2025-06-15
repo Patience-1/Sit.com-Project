@@ -8,4 +8,38 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  document.querySelector("form").addEventListener("submit", function (e) {
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+      alert("Passwords do not match!");
+      e.preventDefault(); // Stop form submission
+    }
+  });
+
+  const fileInput = document.getElementById("profilePic");
+  const preview = document.getElementById("preview");
+
+  fileInput.addEventListener("change", function () {
+    const file = this.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+        preview.setAttribute("src", this.result);
+        preview.style.display = "block";
+      });
+
+      reader.readAsDataURL(file);
+    } else {
+      preview.style.display = "none";
+    }
+  });
+  
+
+
+
   
