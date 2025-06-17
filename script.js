@@ -1,4 +1,4 @@
-const BASE_URL = "https://https://github.com/WambuiStephen-Ze/Sits17.com/api";
+const BASE_URL = "http://localhost:5000/api";
 
 function toggleMenu() {
     const navLinks = document.getElementById("nav-links");

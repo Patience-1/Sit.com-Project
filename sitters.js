@@ -1,4 +1,4 @@
-const BASE_URL = "https://localhost:3000/api";
+const BASE_URL = "https://localhost:5000/api";
 
 document.addEventListener("DOMContentLoaded", function () {
 // Book buttons (for multiple sitters)
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     try {
-      const res = await fetch(`${BASE_URL}/bookings/secure`, {
+      const res = await fetch(`${BASE_URL}/api/bookings`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
