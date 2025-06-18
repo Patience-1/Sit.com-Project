@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://sits17-com-u1sm-git-master-stephen-s-projects-e6630b6d.vercel.app";
 
 function toggleMenu() {
     const navLinks = document.getElementById("nav-links");
