@@ -200,5 +200,3 @@ document.addEventListener("DOMContentLoaded", function () {
 }
   if (isLoginPage) loginUser();
 });
-
-
