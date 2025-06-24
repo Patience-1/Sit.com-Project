@@ -43,14 +43,15 @@ body{
 .navbar ul {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
-    margin-left: 9rem;
+    gap: 2.4rem;
+    margin-left: 14rem;
 }
 
 nav a {
     text-decoration: none;
     color: var(--blue3);
     font-weight: bold;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 .navbar h2{
@@ -100,7 +101,7 @@ a {
     display: flex;
     position: relative;
     gap: 2rem;
-    top: -20rem;
+    top: -22rem;
     cursor: pointer;
     padding-left: 6.5rem;
 }
@@ -184,6 +185,7 @@ button:hover {
   .hero-buttons {
     flex-direction: row;
     align-items: center;
+    margin-left: 3rem;
   }
 
   .btn1,
