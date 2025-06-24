@@ -149,7 +149,7 @@ button:hover {
   .navbar ul {
     flex-direction: column;
     align-items: flex-end;
-    max-width: 2%;
+    max-width: 3%;
 
   }
   .navbar h2 {
@@ -159,8 +159,8 @@ button:hover {
   #nav-links {
     display: none;
     flex-direction: column;
-    width: 70%;
-    max-width: 55%;
+    width: 80%;
+    max-width: 65%;
     gap: 1rem;
     padding: 1rem 0;
     position: absolute;
