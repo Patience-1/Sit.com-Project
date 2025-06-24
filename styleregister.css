@@ -144,6 +144,10 @@ input {
     width: 100%;
   }
 
+  button:hover {
+    background: var(--blue2);
+  }
+
   .register-link {
     font-size: 0.85rem;
     margin-top: 1.5rem;
