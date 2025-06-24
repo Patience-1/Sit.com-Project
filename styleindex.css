@@ -160,7 +160,7 @@ button:hover {
     display: none;
     flex-direction: column;
     width: 70%;
-    max-width: 68%;
+    max-width: 55%;
     gap: 1rem;
     padding: 1rem 0;
     position: absolute;
