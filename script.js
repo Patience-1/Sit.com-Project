@@ -71,9 +71,14 @@ if (!registerForm) return;
     const fullName = document.getElementById("firstname").value + " " + document.getElementById("lastname").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
     const location = document.getElementById("location")?.value;
     const numberOfKids = document.getElementById("numKids")?.value;
 
+    if (password !== confirmPassword) {
+      alert("Passwords do not match!");
+      return;
+    }
     const userData = {
       name: fullName,
       email,
